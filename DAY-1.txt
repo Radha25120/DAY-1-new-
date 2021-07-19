@@ -1,0 +1,108 @@
+DAY-1 COOPER TRAINING
+
+1).To Lower Case 1
+statement: Given a string s, return thestring after replacing every uppercase letter with the same lowercase letter.
+
+Input Format
+
+Hello
+
+Constraints
+
+1 <= s.length <= 100 s consists of printable ASCII characters.
+
+Output Format
+
+hello
+
+Sample Input 0
+
+Hello
+Sample Output 0
+
+hello
+Sample Input 1
+
+here
+Sample Output 1
+
+here
+Sample Input 2
+
+LOVELY
+Sample Output 2
+
+lovely
+
+SOLUTION :
+
+S=input()
+print(S.lower())
+__________________________________
+2).Detect Capital
+We define the usage of capitals in a word to be right when one of the following cases holds:
+
+All letters in this word are capitals, like "USA". All letters in this word are not capitals, like "leetcode". Only the first letter in this word is capital, like "Google". Given a string word, return true if the usage of capitals in it is right.
+
+Input Format
+
+USA
+
+Constraints
+
+1 <= word.length <= 100 word consists of lowercase and uppercase English letters.
+
+Output Format
+
+true
+
+Sample Input 0
+
+FlaG
+Sample Output 0
+
+false
+
+
+SOLUTION: 
+
+S=input()
+all_upper=S.upper()
+#print(all_capital)
+all_lower=S.lower()
+#print(all_lower)
+fir_cap=S.capitalize()
+#print(fir_cap)
+if S==all_upper or S==all_lower or S==fir_cap:
+    print("true")
+else:
+    print("false")
+_______________________________________________
+3).Number of Segments in a String
+You are given a string s, return the number of segments in the string.
+
+A segment is defined to be a contiguous sequence of non-space characters.
+
+Sample Input 0
+
+Hello, my name is John
+Sample Output 0
+
+5
+Explanation 0
+
+The five segments are ["Hello,", "my", "name", "is", "John"]
+
+Sample Input 1
+
+love live! mu'sic forever
+Sample Output 1
+
+4
+
+SOLUTION:
+ 
+s=input()
+a=s.split()
+print(len(a))
+____________________________________________________
